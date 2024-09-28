@@ -1,4 +1,4 @@
-# Arpit Kumar's Portfolio Website
+# Sample Portfolio Website
 
 Welcome to my portfolio website! This site showcases my work as a front-end developer, featuring my skills, experience, and projects.
 
