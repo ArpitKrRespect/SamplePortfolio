@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "General Sans Regular", Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Prevent default scroll */
+}
+
+#minicirclehover {
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 300ms;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    z-index: 99999;
+    border-radius: 50%;
+    background-color: #fff;
+    pointer-events: none; /* Ensures it doesn't interfere with scrolling */
+}
+
+
+#main {
+    width: 100%;
+    height: 100vh; /* Use viewport height for scrolling behavior */
+    overflow: hidden; /* LocomotiveScroll requires hidden overflow */
+    background-color: black;
+    position: relative; /* Ensure LocomotiveScroll knows this is the scroll container */
+}
+
+
+#hero {
+    position: relative;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+.bounding {
+    width: fit-content;
+    overflow: hidden;
+}
+
+.bounding .boundingelem {
+    transform: translateY(100%);
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 40px;
+    color: white;
+}
+
+#nav a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+#heading {
+    margin-top: 90px;
+}
+
+#heading h1 {
+    margin-left: 50px;
+    opacity: 0.6;
+    line-height: 1;
+    font-size: 8vw;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+#heading #secondh1 {
+    margin-left: 100px;
+}
+
+.blocktest {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: fit-content;
+    margin-bottom: 50px;
+}
+
+.blocktest h5 {
+    margin-top: 5px;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+#smallheading {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 50px;
+    text-align: right;
+    margin-top: 0.5vw;
+    text-transform: uppercase;
+    font-size: 1.5vw;
+}
+
+#herofooter {
+    padding: 0 2vw;
+    width: 100%;
+    position: absolute;
+    bottom: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#herofooter a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#herofooter #iconset {
+    display: flex;
+    gap: 5px;
+}
+
+#herofooter .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.288);
+}
+
+#second {
+    color: white;
+    padding-top: 100px; 
+    padding-right: 10vw;
+    width: 100%;
+    background-color: black;
+}
+
+.elem1 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3.5vw 3vw;
+    padding-right: 3vw;
+    color: white;
+}
+
+.elem1 img {
+    height: 20vw;
+}
+
+.elemlast {
+    padding-bottom: 100px;
+}
+
+#about {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: black;
+}
+
+#about img {
+    width: 35%;
+    object-fit: cover;
+}
+
+#textabout {
+    width: 45%;
+    padding: 10px;
+    padding-right: 10vw;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#followaccount {
+    padding: 4vw 10vw;
+    background-color: black;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+
+#footer {
+    color: white;
+    background-color: black;
+    padding: 3.5vw 10vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer a {
+    text-transform: uppercase;
+    text-decoration: none;
+}
